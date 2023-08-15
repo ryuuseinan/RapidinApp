@@ -15,3 +15,7 @@ npx expo install @expo/webpack-config
 cd RapidinApp
 expo start
 ```
+
+# Icon sources
++ https://www.flaticon.es/autores/rukanicon
++ 
