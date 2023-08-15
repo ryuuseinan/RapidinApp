@@ -18,3 +18,4 @@ expo start
 
 # Icon sources
 - https://www.flaticon.es/autores/rukanicon
+- https://www.freepik.com/
