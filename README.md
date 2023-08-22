@@ -7,6 +7,8 @@ git clone https://github.com/ryuuseinan/RapidinApp
 
 # Instalación de dependencias
 ```
+npm install -g expo-cli
+
 npx expo install @expo/webpack-config
 ```
 
