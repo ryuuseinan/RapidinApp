@@ -13,13 +13,14 @@ const PerfilFeedback = ({ route }) => {
         <Text style={styles.nombre}>{persona.nombre} - {persona.edad} años</Text>
         <Text style={styles.genero}>{persona.genero}</Text>
         <Text style={styles.localidad}>Localidad: {persona.localidad}</Text>
+        <Text style={styles.feedbackTitle}>Valoración promedio: </Text>
         <Text style={styles.feedbackTitle}>Valoraciones</Text>
         {persona.feedback.map((feedback, index) => (
           <View key={index} style={styles.feedbackItem}>
+            <Text>Anónimo: {feedback.anonimo ? 'Sí' : 'No'}</Text>
             <Text>Persona ID: {feedback.persona_id}</Text>
             <Text>Valoración: {generateRatingStars(feedback.valoracion)} ({feedback.valoracion.toFixed(1)})</Text>
             <Text>Comentarios: {feedback.comentarios}</Text>
-            <Text>Anónimo: {feedback.anonimo ? 'Sí' : 'No'}</Text>
           </View>
         ))}
       </View>
